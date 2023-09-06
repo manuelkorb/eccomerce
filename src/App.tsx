@@ -6,11 +6,11 @@ function App() {
   return (
     <div className="App">
       <h1>E-commerce App</h1>
-      <div className="ProductListContainer">
-        <ProductList />
+      <div className="ProductList">
+        <ProductList/>
       </div>
       <div className="CartContainer">
-        <Cart /> 
+      <Cart /> 
       </div>
     </div>
   );

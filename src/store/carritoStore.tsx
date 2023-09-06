@@ -1,4 +1,4 @@
-import {createStore} from 'zustand';
+import {create} from 'zustand';
 import { Product } from './products';
 import { persist } from 'zustand/middleware';
 
@@ -14,7 +14,7 @@ type CartStore = {
     clearCart:()=>void;
 }
 
-export const useCartStore = createStore(
+export const useCartStore = create(
     persist<CartStore>(
     set => ({
         cart:[],

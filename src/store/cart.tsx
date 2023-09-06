@@ -8,7 +8,7 @@ function Cart() {
       <h2>Cart</h2>
       {cart.map((item:CartItem) => (
         <div key={item.product.id}>
-          <img src={item.product.img} alt={`Product ${item.product.id}`} />
+          <img className='cart-img' src={item.product.img} alt={`Product ${item.product.id}`} />
           <p>Price: {item.product.price}$</p>
           <p>Quantity: {item.quantity}</p>
           <button onClick={() => removeFromCart(item.product.id)}>Remove</button>

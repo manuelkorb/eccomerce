@@ -15,8 +15,8 @@ function ProductItem({product}:ProductProps) {
       );
 
     return (
-        <div>
-            <img src={product.img} alt={`Product ${product.id}`} />
+        <div className="product">
+            <img className='cart-img' src={product.img} alt={`Product ${product.id}`} />
             <h2>{product.price}$</h2>
             <button onClick={() => addToCart(product)}>Agregar al carrito</button>
         </div>

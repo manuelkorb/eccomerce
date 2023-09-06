@@ -6,5 +6,8 @@ export const initProducts: Product[] = [
     {id:"3",color:"#7698AB",img: "/assets/product2.jpg",price:35},
     {id:"4",color:"#E9D5AA",img: "/assets/product1.jpg",price:55},
     {id:"5",color:"#EEB304",img: "/assets/product5.jpg",price:115},
+    {id:"6",color:"#EEB304",img: "/assets/product5.jpg",price:115},
+    {id:"7",color:"#EEB304",img: "/assets/product5.jpg",price:115},
+    {id:"8",color:"#EEB304",img: "/assets/product5.jpg",price:115},
 
 ];
