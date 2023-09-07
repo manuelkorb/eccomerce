@@ -5,16 +5,19 @@ function Cart() {
 
   return (
     <div>
+      <div className='cart'>
       <h2>Cart</h2>
       {cart.map((item:CartItem) => (
-        <div key={item.product.id}>
-          <img className='cart-img' src={item.product.img} alt={`Product ${item.product.id}`} />
-          <p>Price: {item.product.price}$</p>
-          <p>Quantity: {item.quantity}</p>
-          <button onClick={() => removeFromCart(item.product.id)}>Remove</button>
+        <div className='cart-specs' key={item.product.id}>
+          <p>Modelo: {item.product.model}</p>
+          <p>Precio Unitario: ${item.product.price}</p>
+          <p>Cantidad: {item.quantity}</p>
+          <p>Precio Total: ${item.quantity*item.product.price}</p>
+          <button className='button-remove product-button' onClick={() => removeFromCart(item.product.id)}>ELIMINAR</button>
         </div>
       ))}
-      <button onClick={clearCart}>Clear Cart</button>
+      </div>
+      <button className='product-button' onClick={clearCart}>VACIAR CARRITO</button>
     </div>
   );
 }

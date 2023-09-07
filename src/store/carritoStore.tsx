@@ -18,9 +18,9 @@ export const useCartStore = create(
     persist<CartStore>(
     set => ({
         cart:[],
-        addToCart:(product:Product) =>
+        addToCart:(product:Product,quantity:number) =>
             set((state) => ({
-                cart:[...state.cart,{product,quantity:1}],
+                cart:[...state.cart,{product,quantity}],
             })),
         removeFromCart: (productId) =>
             set((state)=>({
